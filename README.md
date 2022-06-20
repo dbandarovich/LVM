@@ -38,5 +38,8 @@
     </a>
     <p align="left"> 
                    
-                   
+    ```sh
+    sudo lvcreate -L 1.99G -n first_v vg01 
+    ```
+                                  
       

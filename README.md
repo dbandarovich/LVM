@@ -39,6 +39,13 @@
       <img src="images/group01.png">
     </a>
     <p align="left"> 
+    
+                   
+     <p align="left">
+    <a href="https://github.com/dbandarovich/LVM/blob/main/images/new_volumes.png">
+      <img src="images/new_volumes.png">
+    </a>
+    <p align="left">                   
                    
     ```sh
     sudo lvcreate -L 1.99G -n first_v vg01 

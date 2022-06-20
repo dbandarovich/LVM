@@ -77,7 +77,8 @@
     Mount the volume to any directory.
         
     ```sh
-    sudo mount /dev/vg01/first_v /mnt 
+    sudo mount /dev/vg01/first_v /mnt
+    sudo df /mnt
     ```    
 
     <p align="left">

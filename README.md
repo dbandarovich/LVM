@@ -121,7 +121,6 @@
         
     ```sh
     sudo mount /dev/vg01/first_v /mnt
-    sudo df /mnt
     ```    
         
     Resize of the file systems.

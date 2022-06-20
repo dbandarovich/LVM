@@ -78,9 +78,14 @@
         
     ```sh
     sudo mount /dev/vg01/first_v /mnt
-    sudo df /mnt
     ```    
 
+    Get disk space information    
+        
+    ```sh
+    sudo df /mnt
+    ```          
+        
     <p align="left">
     <a href="https://github.com/dbandarovich/LVM/blob/main/images/lvscan.png">
       <img src="images/lvscan.png">
@@ -88,5 +93,52 @@
     <p align="left">        
         
   4. Добавить оставшиеся два  устройства в группу. Изменить размер логического тома, затем размер файловой системы. Проверить размер при помощи df. В качестве результата сделать два скриншота команд.
+    
+    Unmount the volume.   
         
+    ```sh
+    sudo umount /mnt
+    ```         
+    
+    Add physical volumes to the volume group
+    
+    ```sh
+    sudo vgextend vg01 /dev/loop17 /dev/loop18
+    ```
+
+    Extend the size of the volume.
         
+    ```sh
+    sudo lvextend -L +1.99G /dev/vg01/first_v
+    ```        
+
+    <p align="left">
+    <a href="https://github.com/dbandarovich/LVM/blob/main/images/lvdisplay2.png">
+      <img src="images/lvdisplay2.png">
+    </a>
+    <p align="left"> 
+        
+    Mount the volume to any directory.
+        
+    ```sh
+    sudo mount /dev/vg01/first_v /mnt
+    sudo df /mnt
+    ```    
+        
+    Resize of the file systems.
+        
+    ```sh
+    sudo resize2fs /dev/vg01/first_v
+    ```      
+        
+    Get disk space information    
+        
+    ```sh
+    sudo df /mnt
+    ```  
+        
+    <p align="left">
+    <a href="https://github.com/dbandarovich/LVM/blob/main/images/df2.png">
+      <img src="images/df2.png">
+    </a>
+    <p align="left">         

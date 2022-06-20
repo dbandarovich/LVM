@@ -111,7 +111,6 @@
     ```sh
     sudo lvextend -L +1.99G /dev/vg01/first_v
     ```        
-
     <p align="left">
     <a href="https://github.com/dbandarovich/LVM/blob/main/images/lvdisplay2.png">
       <img src="images/lvdisplay2.png">
@@ -135,8 +134,7 @@
         
     ```sh
     sudo df /mnt
-    ```  
-        
+    ```          
     <p align="left">
     <a href="https://github.com/dbandarovich/LVM/blob/main/images/df2.png">
       <img src="images/df2.png">

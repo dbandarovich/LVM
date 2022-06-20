@@ -32,6 +32,7 @@
     ```sh
     sudo vgcreate vg01 /dev/loop15 /dev/loop16 
     ```
+        
     <p align="left">
     <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/group01.png>
       <img src="images/group01.png">

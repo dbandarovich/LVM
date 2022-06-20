@@ -43,5 +43,10 @@
     ```sh
     sudo lvcreate -L 1.99G -n first_v vg01 
     ```
-                                  
+
+    <p align="left">
+    <a href="https://github.com/dbandarovich/LVM/blob/main/images/lvdisplay.png">
+      <img src="images/lvdisplay.png">
+    </a>
+    <p align="left">         
       

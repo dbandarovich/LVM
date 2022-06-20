@@ -12,10 +12,11 @@
     <p align="left">
   
     <p align="left">
-    <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/losetup.png">
+    <a href="https://github.com/dbandarovich/LVM/blob/main/images/losetup.png">
       <img src="images/losetup.png">
     </a>
     <p align="left">
+        
 2. Создать физические разделы на этих устройствах при помощи pvcreate. Создать volume group из первых двух девайсов. На ней создать logical volume при помощи lvcreate. 
     ```sh
     sudo pvcreate /dev/loop15
@@ -24,7 +25,7 @@
     sudo pvcreate /dev/loop18
     ```
     <p align="left">
-    <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/new_volumes.png">
+    <a href="https://github.com/dbandarovich/LVM/blob/main/images/new_volumes.png">
       <img src="images/new_volumes.png">
     </a>
     <p align="left">   
@@ -34,7 +35,7 @@
     ```
         
     <p align="left">
-    <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/group01.png>
+    <a href="https://github.com/dbandarovich/LVM/blob/main/images/group01.png>
       <img src="images/group01.png">
     </a>
     <p align="left"> 

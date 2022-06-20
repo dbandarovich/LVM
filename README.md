@@ -1,4 +1,5 @@
 1. Создать 4 файла размером 1Гб каждый, создать loopback устройства из файлов при помощи losetup. :
+    Creating a 1 GB file, called file1..4
     ```sh
     sudo dd if=/dev/zero of=./file1 bs=1G count=1
     sudo dd if=/dev/zero of=./file2 bs=1G count=1
@@ -50,3 +51,15 @@
     </a>
     <p align="left">         
       
+3. Создать файловую систему при помощи mkfs.ext3, подмонтировать её, посмотреть какой размер. 
+        
+    ```sh
+    sudo mke2fs -j /dev/vg01/first_v 
+    ```    
+    <p align="left">
+    <a href="https://github.com/dbandarovich/LVM/blob/main/images/mke2fs.png">
+      <img src="images/mke2fs.png">
+    </a>
+    <p align="left">       
+        
+        
